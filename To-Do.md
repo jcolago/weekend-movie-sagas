@@ -1,0 +1,62 @@
+-------START UP-------
+    -[x] npm install
+    -[] set up database
+    -[] take stock of provided code
+    -[] npm run client/server
+-------DATABASE-------
+    -[x] Create database "saga_movies_weekend"
+    -[x] Run queries from the .sql file
+    -[] Table join for movies and genres to be displayed on details page
+------------------------FRONT END-----------------------
+
+---------SAGAS & REDUCERS----------
+    -[] Saga for genre list to store genre data in reducer
+
+---------FEATURE LIST---------
+    -[] Route to "/" in App.jsx
+    -[] On click event on poster to capture the movie id number
+        -[] History.push to bring user to details page for specific movie
+---------DETAILS PAGE---------
+    -[] Create Details component and route in App.jsx
+    -[] Display all data for the movie including all genres
+        - Will need a table join for this, message Mason if stuck
+        -[] GET request for a specific movie using req.params and :id
+        ---------STRETCH:----------
+            -[] Details should persist through refresh
+                -[] Conditional rendering will help with this?
+    -[] Back to List button that takes the user back to the movie list
+        -[] History.push on click for this button
+-----------STYLE----------
+    -[] Style this up with Material UI
+        -[] Cards for each movie, table for the details?
+----------OTHER---------
+    -[] Commit often, should have 15+ commits for this project
+    -[] Code comments baby!
+    -[] Update the README.md file with screen shots
+
+
+----------STRETCH GOALS-----------
+
+-------ADD NEW MOVIE FORM-------
+    -[] New component for the Add New Movie Form
+        -[] Input field for movie title
+        -[] Input field for movie poster URL
+        -[] Text area for description
+        -[] Dropdown for movie genres
+        -[] Cancel button
+            -[] History.push to move the user back to home page
+        -[] Save button
+            -[] Save the inputs and send to data base
+            -[] History.push back to home page after saving movie
+            -[] Alert to let user know it worked
+-----------EDIT PAGE-----------
+    -[] Edit button on details page
+        -[] Captures the id on click
+        -[] History.push to edit page
+    -[] Input field for changeing movie title for selected movie
+    -[] Text area for changing the description
+    -[] Cancel button
+        -[] History.goBack to bring user to "/details"
+    -[] Save button
+        -[] Saves title and description and sends to database
+        -[] History.push back to details page
