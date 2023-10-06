@@ -21,7 +21,7 @@ else {
     pool = new pg.Pool({
         host: 'localhost',
         port: 5432,
-        database: 'saga_movie_weekend', 
+        database: 'saga_movies_weekend', 
     });
 }
 
