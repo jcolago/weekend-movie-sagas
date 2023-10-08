@@ -12,4 +12,21 @@ Weekend project for sagas week! This project allows the user to view a list of l
 
 The provided movie list loads as soon as the application is up an running. Click on a movie poster to be taken to the details page of that movie.
 
-![Movie List]()
+![Movie List](/public/screenshots/movie_list.png)
+
+The Movie Details page displays the poster, movie description, and genres of the selected movie. There is also a Movie List button that brings the user back to the Movie List page.
+
+![Details Page](/public/screenshots/details.png)
+
+## Built With
+- [React](https://react.dev)
+- [Redux](https://react-redux.js.org/)
+- [React Router](https://reactrouter.com/en/main)
+- [Redux Sagas](https://redux-saga.js.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Axios](https://axios-http.com/docs/intro)
+- [Express](https://expressjs.com/)
+- [Material UI](https://mui.com/material-ui/getting-started/overview/)
+
+## Acknowledgment
+Thank you to Emerging Digital Academy (www.emergingacademy.org) for supporting me and teaching me the skills needed to complete this project.
