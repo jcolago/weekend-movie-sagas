@@ -1,23 +1,23 @@
 -------START UP-------
     -[x] npm install
-    -[] set up database
-    -[] take stock of provided code
-    -[] npm run client/server
+    -[x] set up database
+    -[x] take stock of provided code
+    -[x] npm run client/server
 -------DATABASE-------
     -[x] Create database "saga_movies_weekend"
     -[x] Run queries from the .sql file
-    -[] Table join for movies and genres to be displayed on details page
+    -[?] Table join for movies and genres to be displayed on details page
 ------------------------FRONT END-----------------------
 
 ---------SAGAS & REDUCERS----------
     -[] Saga for genre list to store genre data in reducer
 
 ---------FEATURE LIST---------
-    -[] Route to "/" in App.jsx
-    -[] On click event on poster to capture the movie id number
-        -[] History.push to bring user to details page for specific movie
+    -[x] Route to "/" in App.jsx
+    -[x] On click event on poster to capture the movie id number
+        -[x] History.push to bring user to details page for specific movie
 ---------DETAILS PAGE---------
-    -[] Create Details component and route in App.jsx
+    -[x] Create Details component and route in App.jsx
     -[] Display all data for the movie including all genres
         - Will need a table join for this, message Mason if stuck
         -[] GET request for a specific movie using req.params and :id
