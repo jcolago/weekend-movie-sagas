@@ -27,11 +27,11 @@
     -[x] Back to List button that takes the user back to the movie list
         -[x] History.push on click for this button
 -----------STYLE----------
-    -[] Style this up with Material UI
-        -[] Cards for each movie, table for the details?
+    -[x] Style this up with Material UI
+        -[x] Cards for each movie, table for the details?
 ----------OTHER---------
     -[] Commit often, should have 15+ commits for this project
-    -[] Code comments baby!
+    -[x] Code comments baby!
     -[] Update the README.md file with screen shots
 
 

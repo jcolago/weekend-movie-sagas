@@ -20,7 +20,7 @@ export default function Details() {
             <br />
             {movie.map(movie => {
                 return (
-                    <Card variant="outlined" xs={{ padding: 5}} key={movie.id}>
+                    <Card variant="outlined" style={{ padding: 5, background: "#ffebcd"}} key={movie.id}>
                         <CardHeader title="Details" />
                         <Grid container spacing={3}>
                             <Grid item xs={3} className="detail-poster">
