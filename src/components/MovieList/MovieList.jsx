@@ -13,7 +13,6 @@ import {
 
 function MovieList() {
     const history = useHistory();
-
     const dispatch = useDispatch();
     const movies = useSelector(store => store.movies);
 
@@ -27,12 +26,12 @@ function MovieList() {
             <section className="movies">
                 {movies.map(movie => {
                     return (
-                        <Grid item xs={3} key={movie.id} >
-                            <Card variant='outlined' style={{ margin: "5px", maxHeight: "550px" }}>
+                        <Grid item xs={3} key={movie.id}>
+                            <Card className='movie-card' variant='outlined' style={{ margin: "5px", maxHeight: "550px"}}>
                                 <CardHeader title={movie.title} />
                                 <CardContent>
-                                    <Tooltip title="Click for Details">
-                                        <CardActionArea>
+                                    <Tooltip title="Click for Details" >
+                                        <CardActionArea >
                                             <img onClick={() => history.push(`/details/${movie.id}`)} src={movie.poster} alt={movie.title} />
                                         </CardActionArea>
                                     </Tooltip>
