@@ -79,3 +79,10 @@ VALUES
 (12,6), (12,3),           -- Social Net
 (13,6), (13,10), (13,1),  -- Titanic
 (14,1), (14,2), (14,4);   -- Toy Story
+
+--Query text used for table join
+SELECT "m".id, "m".title, "m".poster, "m".description, STRING_AGG("g".name, ', ') FROM "movies" AS "m"
+JOIN "movies_genres" AS "mg" ON "m".id = "mg".movie_id
+JOIN "genres" AS "g" ON "g".id = "mg".genre_id
+WHERE "mg".movie_id = '12'
+GROUP BY "m".id, "m".title, "m".poster, "m".description;

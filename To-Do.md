@@ -6,7 +6,7 @@
 -------DATABASE-------
     -[x] Create database "saga_movies_weekend"
     -[x] Run queries from the .sql file
-    -[?] Table join for movies and genres to be displayed on details page
+    -[x] Table join for movies and genres to be displayed on details page
 ------------------------FRONT END-----------------------
 
 ---------SAGAS & REDUCERS----------
@@ -18,14 +18,14 @@
         -[x] History.push to bring user to details page for specific movie
 ---------DETAILS PAGE---------
     -[x] Create Details component and route in App.jsx
-    -[] Display all data for the movie including all genres
+    -[x] Display all data for the movie including all genres
         - Will need a table join for this, message Mason if stuck
-        -[] GET request for a specific movie using req.params and :id
+        -[x] GET request for a specific movie using req.params and :id
         ---------STRETCH:----------
-            -[] Details should persist through refresh
-                -[] Conditional rendering will help with this?
-    -[] Back to List button that takes the user back to the movie list
-        -[] History.push on click for this button
+            -[x] Details should persist through refresh
+                -[x] Conditional rendering will help with this?
+    -[x] Back to List button that takes the user back to the movie list
+        -[x] History.push on click for this button
 -----------STYLE----------
     -[] Style this up with Material UI
         -[] Cards for each movie, table for the details?
