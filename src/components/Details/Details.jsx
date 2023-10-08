@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
+import { Grid, Card, Container, Button, CardHeader } from "@material-ui/core";
 
 export default function Details() {
     const id = useParams().id;
@@ -15,27 +16,26 @@ export default function Details() {
     }, []);
 
     return (
-        <div>
+        <Container>
+            <br />
             {movie.map(movie => {
                 return (
-                    <div>
-                        <h1>Details</h1>
-                        <div className="detail-poster">
-                        <img src={movie.poster} />
-                        </div>
-                        <div className="details-description">
-                        <p>{movie.description}</p>
-                        </div>
-                        <div className="details-genres">
-                            <h2>Genres: {movie.string_agg}</h2>
-                        </div>
-                        <div className="goBackBtn">
-                            <button onClick={() => history.push("/")}>Movie List</button>
-                        </div>
-                    </div>
-
+                    <Card variant="outlined" xs={{ padding: 5}} key={movie.id}>
+                        <CardHeader title="Details" />
+                        <Grid container spacing={3}>
+                            <Grid item xs={3} className="detail-poster">
+                                <img src={movie.poster} />
+                            </Grid>
+                            <Grid item xs={8} className="details-description">
+                                <p>{movie.description}</p>
+                                <h4>Genres: {movie.string_agg}</h4>
+                                <Button variant="contained" color="primary" onClick={() => history.push("/")}>Movie List</Button>
+                            </Grid>
+                        </Grid>
+                        <br />
+                    </Card>
                 )
             })}
-        </div>
+        </Container>
     )
 }
