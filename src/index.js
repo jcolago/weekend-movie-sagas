@@ -1,3 +1,4 @@
+//Imports for react
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -29,7 +30,7 @@ function* fetchAllMovies() {
     }
         
 }
-
+//Saga used to dispatch to the oneMove reducer with data from the server
 function* fetchOneMovie (action) {
     try {
         console.log(action.payload)
@@ -63,7 +64,7 @@ const genres = (state = [], action) => {
             return state;
     }
 }
-
+//Reducer for setting the state used on the details component
 const oneMovie = (state =[], action) => {
     switch (action.type) {
         case 'SET_ONE_MOVIE':
