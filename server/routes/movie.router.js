@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const pool = require('../modules/pool')
 
+//Get route to get all movies from the database
 router.get('/', (req, res) => {
 
   const query = `SELECT * FROM movies ORDER BY "title" ASC`;
@@ -15,10 +16,10 @@ router.get('/', (req, res) => {
     })
 
 });
-
+//GET route to get a single movie from the database by the id number
 router.get('/:id', (req, res) => {
   const id = req.params.id
-
+//Query text for the the many to many table join
   const query = `SELECT "m".id, "m".title, "m".poster, "m".description, STRING_AGG("g".name, ', ') FROM "movies" AS "m"
   JOIN "movies_genres" AS "mg" ON "m".id = "mg".movie_id
   JOIN "genres" AS "g" ON "g".id = "mg".genre_id
