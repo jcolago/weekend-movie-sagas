@@ -9,8 +9,6 @@
     -[x] Table join for movies and genres to be displayed on details page
 ------------------------FRONT END-----------------------
 
----------SAGAS & REDUCERS----------
-    -[] Saga for genre list to store genre data in reducer
 
 ---------FEATURE LIST---------
     -[x] Route to "/" in App.jsx
