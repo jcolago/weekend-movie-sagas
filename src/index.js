@@ -28,14 +28,14 @@ function* fetchAllMovies() {
     } catch {
         console.log('get all error');
     }
-        
+
 }
 //Saga used to dispatch to the oneMove reducer with data from the server
-function* fetchOneMovie (action) {
+function* fetchOneMovie(action) {
     try {
         console.log(action.payload)
         const response = yield axios.get(`/api/movie/${action.payload}`);
-        yield put ({ type: 'SET_ONE_MOVIE', payload: response.data})
+        yield put({ type: 'SET_ONE_MOVIE', payload: response.data })
     } catch (error) {
         console.log(error);
         alert('Unable to fecth movie with id of', action.payload)
@@ -65,7 +65,7 @@ const genres = (state = [], action) => {
     }
 }
 //Reducer for setting the state used on the details component
-const oneMovie = (state =[], action) => {
+const oneMovie = (state = [], action) => {
     switch (action.type) {
         case 'SET_ONE_MOVIE':
             return action.payload
@@ -89,8 +89,8 @@ const storeInstance = createStore(
 sagaMiddleware.run(rootSaga);
 
 ReactDOM.render(
-        <Provider store={storeInstance}>
+    <Provider store={storeInstance}>
         <App />
-        </Provider>,
+    </Provider>,
     document.getElementById('root')
 );

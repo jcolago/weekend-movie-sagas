@@ -28,12 +28,12 @@ function MovieList() {
     //Componet rendering function. Loops over the movies selector to get the data and display on DOM. Also uses MUI components for styling.
     return (
         <main>
-            <h1 style={{color: "white"}}>Movie List</h1>
+            <h1 style={{ color: "white" }}>Movie List</h1>
             <section className="movies">
                 {movies.map(movie => {
                     return (
                         <Grid item xs={3} key={movie.id}>
-                            <Card className='movie-card' variant='outlined' style={{ margin: "5px", maxHeight: "550px", background: "#ffebcd"}}>
+                            <Card className='movie-card' variant='outlined' style={{ margin: "5px", maxHeight: "550px", background: "#ffebcd" }}>
                                 <CardHeader title={movie.title} />
                                 <CardContent>
                                     <Tooltip title="Click for Details" color='primary'>
