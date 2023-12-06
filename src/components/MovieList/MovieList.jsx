@@ -38,7 +38,7 @@ function MovieList() {
                                 <CardContent>
                                     <Tooltip title="Click for Details" color='primary'>
                                         <CardActionArea >
-                                            <img onClick={() => history.push(`/details/${movie.id}`)} src={movie.poster} alt={movie.title} />
+                                            <img onClick={() => history.push(`/details/${movie.id}`)}  style={{height: "274px", width: "185 px"}} src={movie.poster} alt={movie.title} />
                                         </CardActionArea>
                                     </Tooltip>
                                 </CardContent>

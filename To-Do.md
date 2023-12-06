@@ -28,9 +28,9 @@
     -[x] Style this up with Material UI
         -[x] Cards for each movie, table for the details?
 ----------OTHER---------
-    -[] Commit often, should have 15+ commits for this project
+    -[x] Commit often, should have 15+ commits for this project
     -[x] Code comments baby!
-    -[] Update the README.md file with screen shots
+    -[x] Update the README.md file with screen shots
 
 
 ----------STRETCH GOALS-----------
